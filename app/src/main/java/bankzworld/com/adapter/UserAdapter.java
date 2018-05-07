@@ -55,8 +55,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
         Glide.with(context).load(userList.getAvatarUrl())
                 .thumbnail(0.10f)
-                .crossFade()
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.circleImageView);
     }
 
